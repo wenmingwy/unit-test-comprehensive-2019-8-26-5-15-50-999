@@ -15,13 +15,12 @@ public  class  outputMessage {
 				for(int j=0;j<4;j++) {
 					if(stringInput[i]==stringStr[j] && i==j) {
 						matching += 1;
-					}
-					else if(stringInput[i]==stringStr[j] && i!=j) {
+					}else if(stringInput[i]==stringStr[j] && i!=j) {
 						matchingButPositionError += 1;
 					}
 				}
 			}
 	   return matching + "A" + matchingButPositionError + "B";
 	  }
-   }
+	}
 }
