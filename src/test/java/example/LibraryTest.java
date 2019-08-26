@@ -13,11 +13,12 @@ import static org.mockito.Mockito.*;
 
 @DisplayName("A special tests collection for junit and mockito")
 class LibraryTest {
-
+// 初始化测试环境
     @BeforeAll
     static void initTestEnv() {
     }
-
+    
+// 初始化方法体
     @BeforeEach
     void initEveryMethod() {
     }
@@ -67,7 +68,9 @@ class LibraryTest {
                 () -> assertEquals("Doe", lastName)
         );
     }
-
+ 
+    
+    
     @Test
     void exceptionTesting() {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
